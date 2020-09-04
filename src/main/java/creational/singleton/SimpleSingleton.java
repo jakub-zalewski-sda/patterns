@@ -12,11 +12,7 @@ public class SimpleSingleton {
 
     public static SimpleSingleton getInstance() {
         if (instance == null) {
-            synchronized (SimpleSingleton.class) {
-                if (instance == null) {
-                    instance = new SimpleSingleton("initialValue");
-                }
-            }
+            instance = new SimpleSingleton("initialValue");
         }
 
         return instance;
