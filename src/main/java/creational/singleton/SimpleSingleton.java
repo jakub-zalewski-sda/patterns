@@ -12,7 +12,13 @@ public class SimpleSingleton {
 
     public static SimpleSingleton getInstance() {
         if (instance == null) {
-            instance = new SimpleSingleton("initialValue");
+            //double checked singleton
+            synchronized (SimpleSingleton.class) {
+                if (instance == null) {
+                    //
+                    instance = new SimpleSingleton("initialValue");
+                }
+            }
         }
 
         return instance;

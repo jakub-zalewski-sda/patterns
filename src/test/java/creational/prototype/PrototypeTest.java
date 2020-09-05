@@ -17,5 +17,6 @@ public class PrototypeTest {
         Assert.assertEquals(prototype.getName(), clonedPrototype.getName());
         Assert.assertEquals(prototype.getType(), clonedPrototype.getType());
         Assert.assertNotSame(prototype, clonedPrototype);
+        Assert.assertSame(prototype.getBasket(), clonedPrototype.getBasket());
     }
 }
