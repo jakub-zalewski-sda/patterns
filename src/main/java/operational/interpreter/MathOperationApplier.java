@@ -11,5 +11,4 @@ public class MathOperationApplier {
                 throw new IllegalArgumentException();
         }
     }
-
 }
