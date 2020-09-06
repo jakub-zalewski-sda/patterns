@@ -1,17 +1,17 @@
-package playground.decorator;
+package playground.patterns.decorator;
 
-public class PaymentRefundFetcher implements PaymentInfoFetcher {
+public class PaymentSurchargeFetcher implements PaymentInfoFetcher {
 
     private final PaymentInfoFetcher paymentInfoFetcher;
 
-    public PaymentRefundFetcher(PaymentInfoFetcher paymentInfoFetcher) {
+    public PaymentSurchargeFetcher(PaymentInfoFetcher paymentInfoFetcher) {
         this.paymentInfoFetcher = paymentInfoFetcher;
     }
 
     @Override
     public PaymentInfo getPaymentInfo() {
         PaymentInfo paymentInfo = paymentInfoFetcher.getPaymentInfo();
-        System.out.println("getting payment refunds");
+        System.out.println("getting payment surcharges");
 
 
         return paymentInfo;

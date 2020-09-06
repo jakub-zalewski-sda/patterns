@@ -1,4 +1,4 @@
-package playground.decorator;
+package playground.patterns.decorator;
 
 public class Tea implements Drink {
     @Override

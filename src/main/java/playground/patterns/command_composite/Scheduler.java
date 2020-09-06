@@ -1,4 +1,4 @@
-package playground.command_composite;
+package playground.patterns.command_composite;
 
 public class Scheduler {
 
