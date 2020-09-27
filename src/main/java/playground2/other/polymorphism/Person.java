@@ -1,7 +1,6 @@
-package playground.oop.polymorphism;
+package playground2.other.polymorphism;
 
 public class Person {
-
     protected String name;
 
     public Person(String name) {
@@ -9,6 +8,6 @@ public class Person {
     }
 
     public void sayHello() {
-        System.out.println("i am person: " + name);
+        System.out.println("i am person " + name);
     }
 }
