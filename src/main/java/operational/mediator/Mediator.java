@@ -31,5 +31,5 @@ public class Mediator {
             default:
                 throw new IllegalArgumentException();
         }
-    };
+    }
 }

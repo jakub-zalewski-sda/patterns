@@ -28,4 +28,12 @@ class PaymentCreationFacade {
         return payment;
     }
 
+    public Payment createPayment(int price) {
+        Payment payment = new Payment("12");
+        paymentOperatorPaymentCreator.create(payment);
+        paymentNotifier.notifyPaymentCreated(payment);
+        oldSystemRepository.save(payment);
+
+        return payment;
+    }
 }

@@ -4,11 +4,8 @@ public class Runner {
 
     public static void main(String[] args) {
         HTMLFile htmlFile = new HTMLFile();
-
-        Visitor visitor = new HTMLLogger();
-        Visitor visitor2 = new HTMLValidator();
+        Visitor visitor = new HTML5Validator();
 
         htmlFile.accept(visitor);
-        htmlFile.accept(visitor2);
     }
 }

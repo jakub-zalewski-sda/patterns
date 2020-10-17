@@ -8,7 +8,7 @@ public class InterpreterTest {
     @Test
     public void shouldAdd() {
         //given
-        Interpreter interpreter = new NaturalStyleInterpreter(new MathOperationApplier());
+        Interpreter interpreter = new NaturalStyleInterpreter(new Calculator());
 
         //when
         double result = interpreter.interpret("1 + 2");
@@ -20,7 +20,7 @@ public class InterpreterTest {
     @Test
     public void shouldSubtract() {
         //given
-        Interpreter interpreter = new NaturalStyleInterpreter(new MathOperationApplier());
+        Interpreter interpreter = new NaturalStyleInterpreter(new Calculator());
 
         //when
         double result = interpreter.interpret("1 - 2");

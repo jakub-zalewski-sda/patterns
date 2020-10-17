@@ -1,6 +1,7 @@
 package operational.interpreter;
 
-public class MathOperationApplier {
+public class Calculator {
+
     public double apply(MathOperation mathOperation, double first, double second) {
         switch (mathOperation) {
             case ADD:

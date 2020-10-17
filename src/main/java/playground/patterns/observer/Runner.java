@@ -1,6 +1,7 @@
 package playground.patterns.observer;
 
 public class Runner {
+
     public static void main(String[] args) {
         Observer observer1 = new ObserverImpl("observer1");
         Observer observer2 = new ObserverImpl("observer2");
@@ -16,8 +17,8 @@ public class Runner {
 
         subject.notifyAllObservers();
 
-        subject.detach(observer1);
-
-        subject.notifyAllObservers();
+//        subject.detach(observer1);
+//
+//        subject.notifyAllObservers();
     }
 }

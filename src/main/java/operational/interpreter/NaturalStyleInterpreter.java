@@ -2,14 +2,16 @@ package operational.interpreter;
 
 public class NaturalStyleInterpreter implements Interpreter {
 
-    private final MathOperationApplier mathOperationApplier;
+    private final Calculator calculator;
 
-    public NaturalStyleInterpreter(MathOperationApplier mathOperationApplier) {
-        this.mathOperationApplier = mathOperationApplier;
+    public NaturalStyleInterpreter(Calculator calculator) {
+        this.calculator = calculator;
     }
 
     @Override
-    public double interpret(String context) {
+    public double interpret(Object contextParameter) {
+
+        String context = (String)contextParameter;
 
         String[] args = context.split(" ");
 
@@ -17,6 +19,6 @@ public class NaturalStyleInterpreter implements Interpreter {
         double second = Double.parseDouble(args[2]);
         MathOperation mathOperation = MathOperation.from(args[1]);
 
-        return mathOperationApplier.apply(mathOperation, first, second);
+        return calculator.apply(mathOperation, first, second);
     }
 }

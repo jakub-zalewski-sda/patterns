@@ -1,6 +1,7 @@
 package operational.visitor;
 
 public class HTMLFile {
+
     private String body;
 
     public String getBody() {
