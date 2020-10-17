@@ -25,7 +25,7 @@ public class FacadeTest {
     @Test
     public void shouldProcessPaymentCreationFlow() {
         //given
-        PaymentCreator paymentCreator = new PaymentCreator(
+        PaymentCreationFacade paymentCreator = new PaymentCreationFacade(
             paymentFactory, paymentOperatorPaymentCreator, paymentNotifier, oldSystemPaymentRepository);
 
         String basketId = "12345";

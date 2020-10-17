@@ -10,7 +10,7 @@ public class Ready implements ParkingTicketVendingMachineState {
 
     @Override
     public void collectCash() {
-            this.parkingTicketVendingMachine.setState(new Paid(parkingTicketVendingMachine));
+        this.parkingTicketVendingMachine.setState(new Paid(parkingTicketVendingMachine));
     }
 
     @Override

@@ -1,13 +1,13 @@
 package structural.facade;
 
-class PaymentCreator {
+class PaymentCreationFacade {
 
     private final PaymentFactory paymentFactory;
     private final PaymentOperatorPaymentCreator paymentOperatorPaymentCreator;
     private final PaymentNotifier paymentNotifier;
     private final OldSystemPaymentRepository oldSystemRepository;
 
-    public PaymentCreator(
+    public PaymentCreationFacade(
         PaymentFactory paymentFactory,
         PaymentOperatorPaymentCreator paymentOperatorPaymentCreator,
         PaymentNotifier paymentNotifier,
